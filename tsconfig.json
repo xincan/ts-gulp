@@ -1,0 +1,10 @@
+{
+  "files": [
+    "src/main.ts"
+  ],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es2017",
+    "experimentalDecorators": true  // 开启装饰器
+  }
+}
