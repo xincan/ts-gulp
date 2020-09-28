@@ -1,3 +1,9 @@
+ /**
+   *  中心点对象，图形所处在画布上的坐标中心点
+   * @author JiangXincan
+   * @date 2020/9/28 17:38
+   * @return
+   */
 export class Coordinate {
 
     private _x: number;     // 横坐标值

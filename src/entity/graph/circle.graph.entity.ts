@@ -8,8 +8,19 @@ import {Coordinate} from "../coordinate/coordinate.entity";
 
 export class CircleGraph extends Graph{
 
+    // 半径
+    private _r: number = 30;
 
-    constructor(id: string, center: Coordinate) {
+    constructor(id: string, center: Coordinate, r: number) {
         super(id, center);
+        this._r = r;
+    }
+
+    get r(): number {
+        return this._r;
+    }
+
+    set r(value: number) {
+        this._r = value;
     }
 }

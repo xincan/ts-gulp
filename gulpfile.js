@@ -1,9 +1,12 @@
 let gulp = require('gulp');
+var gutil = require('gulp-util');
 let browserify = require('browserify');
 let source = require('vinyl-source-stream');
 let tsify = require('tsify');
 let sourcemaps = require('gulp-sourcemaps');
 let buffer = require('vinyl-buffer');
+
+
 let paths = {
     pages: ['src/*.html']
 };
@@ -14,6 +17,9 @@ gulp.task('copyHtml', function () {
 });
 
 gulp.task('default', gulp.series(gulp.parallel('copyHtml'), function () {
+    gutil.log('message');
+    gutil.log(gutil.colors.red('error'));
+    gutil.log(gutil.colors.green('message:') + "some");
     return browserify({
         basedir: '.',
         debug: true,
