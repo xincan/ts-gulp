@@ -1,6 +1,7 @@
-import {Draw} from "../entity/draw/draw.entity";
+import {Draw} from "../factory/draw.factory";
+import {Graph} from "../entity/graph/graph.entity";
 export interface DrawService {
 
-    draw(draw: Draw): Draw;
+    draw(ctx: CanvasRenderingContext2D, graph: Graph): void;
 
 }
