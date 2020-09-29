@@ -16,7 +16,7 @@ class RectangleGraphDrawServiceImpl implements DrawService {
         ctx.beginPath();
         ctx.lineWidth = graph.lineWidth;
         ctx.strokeStyle = "red";
-        ctx.strokeRect(center.x, center.y, graph.width, graph.height);
+        ctx.strokeRect(center.x, center.y, center.width, center.height);
         ctx.stroke();
         return draw;
     }
@@ -66,7 +66,7 @@ class DiamondGraphDrawServiceImpl implements DrawService {
         ctx.beginPath();
         ctx.rotate(Math.PI / 180 * 45);
         ctx.strokeStyle = "blue";
-        ctx.strokeRect(center.x + graph.width, center.x, graph.width, graph.height);
+        ctx.strokeRect(center.x + center.width, center.x, center.width, center.height);
         ctx.stroke();
         return draw;
     }
