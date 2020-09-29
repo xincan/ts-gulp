@@ -3,16 +3,16 @@ import {Graph} from "../graph/graph.entity";
 
 export class Draw {
 
-    private _panel: CanvasRenderingContext2D; // 当前画布
+    // 当前画布
+    private _panel: CanvasRenderingContext2D;
 
-    private _graph: Graph;  // 将要绘制的图形对象
-
+    // 将要绘制的图形对象
+    private _graph: Graph;
 
     constructor(panel: CanvasRenderingContext2D, graph: Graph) {
         this._panel = panel;
         this._graph = graph;
     }
-
 
     get panel(): CanvasRenderingContext2D {
         return this._panel;
