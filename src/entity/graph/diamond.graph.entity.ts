@@ -6,7 +6,7 @@
 import {Graph} from "./graph.entity";
 import {Coordinate} from "../coordinate/coordinate.entity";
 
-export class DiamondGraph extends Graph{
+export class DiamondGraph extends Graph {
 
     constructor(id: string, center: Coordinate) {
         super(id, center);

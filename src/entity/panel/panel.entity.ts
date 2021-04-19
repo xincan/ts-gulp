@@ -1,3 +1,8 @@
+/**
+ *  画布实体对象
+ * @author JiangXincan
+ * @date 2020/5/19 13:38
+ */
 export class Panel {
 
     private _id: string;
@@ -10,7 +15,7 @@ export class Panel {
 
     private _resolution: string;
 
-    constructor(id: string, width: number = 100, height: number = 100, backgroundColor: string = "#fdfdfd", resolution = "%") {
+    constructor(id: string, width: number = 100, height: number = 100, backgroundColor: string = "#fdfdfd", resolution: string = "%") {
         this._id = id;
         this._width = width;
         this._height = height;

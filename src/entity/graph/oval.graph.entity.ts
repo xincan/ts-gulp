@@ -6,7 +6,7 @@
 import {Graph} from "./graph.entity";
 import {Coordinate} from "../coordinate/coordinate.entity";
 
-export class OvalGraph extends Graph{
+export class OvalGraph extends Graph {
 
     constructor(id: string, center: Coordinate) {
         super(id, center);

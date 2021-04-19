@@ -42,7 +42,7 @@ class OvalGraphDrawServiceImpl implements DrawService {
     draw(ctx: CanvasRenderingContext2D, graph: Graph): void {
         let center = graph.center;
         ctx.beginPath();
-        ctx.strokeStyle = "lime";
+        ctx.strokeStyle = "orange";
         ctx.ellipse(center.x, center.y, 30, 10, 0, 0, Math.PI * 2);
         ctx.stroke();
     }

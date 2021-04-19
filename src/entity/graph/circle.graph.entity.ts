@@ -6,7 +6,7 @@
 import {Graph} from "./graph.entity";
 import {Coordinate} from "../coordinate/coordinate.entity";
 
-export class CircleGraph extends Graph{
+export class CircleGraph extends Graph {
 
     // 半径
     private _r: number = 30;
